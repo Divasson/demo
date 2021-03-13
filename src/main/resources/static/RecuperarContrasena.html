@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>
+            Registro a Página Web
+        </title>
+        <link rel="stylesheet" href="Estilo.css">
+        <script src="https://kit.fontawesome.com/1f6d882d27.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="Imagenes/Grafica.png">
+    </head>
+    <body style="background-color: transparent;">
+        <div class="container" id="container" style="margin: auto;">
+            <div class="form-container" id="GranContenedor" style="visibility: hidden;background-color: transparent;width: 100%;">
+    
+                <form action="http://localhost:8000/api/signUp/" method="PUT" id="formPass" style="background-color: transparent;">
+                    <h1 style="color: black;">Cambiar Contraseña</h1>
+                    &nbsp
+                    <h1><i class="fas fa-unlock-alt"></i></h1>
+                    &nbsp
+                    <input type="text" placeholder="Contraseña" id="password" name="password" style="background-color: #eee;
+                    border: none;
+                    padding: 12px 15px;
+                    margin: 8px 0;
+                    width: 100%;"/>
+                    
+                    <input type="password" placeholder="Repita su Contraseña" id="password2" name="password2" style="background-color: #eee;
+                    border: none;
+                    padding: 12px 15px;
+                    margin: 8px 0;
+                    width: 100%;"/>
+                    &nbsp
+                    <button type="submit">Sign Up</button>
+                </form>
+                    
+                
+            </div>
+            <div class="form-container" id="GranContenedor2" style="width: 100%; margin:auto; background-color: transparent;">
+
+                <form id="formEmail" style="background-color: transparent;">
+                    <h1 style="color: black;">Introduzca su Dirección de correo</h1>
+                    &nbsp
+                    <h1><i class="fas fa-envelope"></i></h1>
+                    &nbsp
+                    <input type="text" placeholder="Email" id="email" name="email" style="background-color: #eee;
+                    border: none;
+                    padding: 12px 15px;
+                    margin: 8px 0;
+                    width: 100%;"/>
+                    
+                    &nbsp
+                    <button type="submit">Siguiente</button>
+                </form>
+                    
+                
+            </div>
+            <div class="form-container" id="GranContenedor3" style="align-items: center;justify-content: center;text-align: center;padding: 0 50px;visibility: hidden;width: 100%; margin:auto; background-color: transparent;">
+
+                
+                <h1 style="padding-top: 25%;color: black;margin: auto;">¡Contraseña Cambiada!</h1>
+                &nbsp
+                <h1 style="margin: auto;"><i class="fas fa-lock"></i></h1>
+                &nbsp
+                <h1 style="color: black;margin: auto;"><a href="Registro.html">Loguéate</a></h1>
+                &nbsp
+                    
+                
+                    
+                
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Nacho Divassón
+            </p>
+        </footer>
+        <script src="JSChangePass.js"></script>
+    </body>
+</html>
+
+

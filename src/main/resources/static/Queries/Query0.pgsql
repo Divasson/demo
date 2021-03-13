@@ -1,0 +1,1 @@
+select * from usuario where edad>19;
