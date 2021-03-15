@@ -162,7 +162,7 @@ public class UsuarioController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     @CrossOrigin(origins = "*")
-    public ResponseEntity<String> registrarUsuario(@RequestBody Usuario user){ //mapear el body en un usuario
+    public ResponseEntity<String> registrarUsuario(@RequestBody Usuario user)throws UsuarioExcepcion{ //mapear el body en un usuario
         System.out.println("Estamos dentro");
         System.out.println(user);
         System.out.println(usuarioOk(user));

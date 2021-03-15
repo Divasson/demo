@@ -24,13 +24,13 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public ResponseEntity<String> anadirNuevoUser(Usuario user) {
+    public ResponseEntity<String> anadirNuevoUser(Usuario user) throws UsuarioExcepcion {
         System.out.println(user);
         Optional<Usuario> usuarioEmail=usuarioRepository
                 .findUsuarioByEmail(user.getEmail());
         ResponseEntity<String> res = new ResponseEntity<String>("{\"result\" : \"EMAIL_TAKEN\"}", HttpStatus.ACCEPTED);
         if(usuarioEmail.isPresent()){
-            //throw new IllegalStateException("email taken");
+            throw new UsuarioExcepcion("email taken");
 
         }else{
             System.out.println("Dentro dentro");
